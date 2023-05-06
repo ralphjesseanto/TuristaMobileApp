@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tourism_info_eleven">
+
+    <VideoView
+        android:id="@+id/video_hub"
+        android:layout_width="match_parent"
+        android:layout_height="888dp"/>
+
+    <ImageButton
+        android:id="@+id/img_btn_menu"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/home_button"
+        android:contentDescription="@string/home" />
+
+    <ImageView
+        android:id="@+id/image_turista_logo"
+        android:layout_width="351dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="89dp"
+        android:contentDescription="@string/logo_turista"
+        android:src="@drawable/logo_turista"
+        tools:ignore="ImageContrastCheck" />
+
+
+    <TextView
+        android:id="@+id/textVw_hub"
+        android:layout_width="352dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="399dp"
+        android:background="#698269"
+        android:fontFamily="sans-serif"
+        android:padding="20dp"
+        android:text="@string/tourism_office_hubs"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:drawableLeftCompat="@drawable/category_tourism_hubs"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedVw_hub"
+        android:layout_width="352dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="535dp">
+
+        <GridLayout
+            android:id="@+id/grid_tourism_info"
+            android:layout_width="352dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_tourism_hub"
+                android:layout_width="352dp"
+                android:layout_height="180dp"
+                android:scrollbars="vertical"
+                android:background="#698269"/>
+        </GridLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

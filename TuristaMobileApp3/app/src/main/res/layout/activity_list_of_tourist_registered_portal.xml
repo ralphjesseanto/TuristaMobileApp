@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#41644A"
+    tools:context=".list_of_tourist_registered_portal">
+
+    <ImageView
+        android:id="@+id/image_turista_logo"
+        android:layout_width="351dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
+        android:contentDescription="@string/logo_turista"
+        android:src="@drawable/logo_turista"
+        tools:ignore="ImageContrastCheck" />
+
+
+    <TextView
+        android:id="@+id/textVw_tourist_registered"
+        android:layout_width="352dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="336dp"
+        android:padding="20dp"
+        android:background="#9DC08B"
+        android:text="@string/list_of_tourist_registered"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_list_of_tourist"
+        android:layout_width="352dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="27dp"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="411dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLyt_tourist_info"
+        android:layout_width="352dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="467dp"
+        android:background="#9DC08B">
+
+        <ListView
+            android:id="@+id/listVw_tourist_info"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:dividerHeight="2dp"
+            android:divider="@color/white"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_admin_menu"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="674dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/admin_menu"
+        android:textColor="#00695C"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</RelativeLayout>

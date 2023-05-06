@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".turista_fun_facts_portal">
+
+    <RelativeLayout
+        android:id="@+id/relativeLyt_fun_facts"
+        android:layout_width="match_parent"
+        android:layout_height="966dp">
+
+        <VideoView
+            android:id="@+id/video_facts"
+            android:layout_width="match_parent"
+            android:layout_height="966dp"/>
+
+        <ImageButton
+            android:id="@+id/img_btn_menu"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/home"
+            android:src="@drawable/home_button"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/image_turista_logo"
+            android:layout_width="351dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="89dp"
+            android:contentDescription="@string/logo_turista"
+            android:src="@drawable/logo_turista"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textVw_facts"
+            android:layout_width="352dp"
+            android:layout_height="59dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="399dp"
+            android:text="@string/fun_facts_portal"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/teal_700"
+            android:textSize="30sp"
+            android:textAlignment="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardVw_facts"
+            android:layout_width="352dp"
+            android:layout_height="340dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            app:cardBackgroundColor="#FDA769"
+            android:layout_marginTop="465dp">
+
+            <ImageSwitcher
+                android:id="@+id/imgsw_facts"
+                android:layout_width="324dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="18dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:id="@+id/gridLyt_facts"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="822dp"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <Button
+                android:id="@+id/btn_facts_prev"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#F0997D"
+                android:text="@string/previous_facts"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btn_facts_next"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#F0997D"
+                android:text="@string/next_facts"
+                android:textColor="#455A64"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+        </GridLayout>
+    </RelativeLayout>
+</ScrollView>

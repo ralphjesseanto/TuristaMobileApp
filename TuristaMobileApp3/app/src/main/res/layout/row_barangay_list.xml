@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="#088395"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVw_barangay_name"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="50dp"
+        app:cardMaxElevation="50dp"
+        app:cardBackgroundColor="#FFDCB6">
+
+        <TextView
+            android:id="@+id/textVw_name_barangay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/name_place"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="sans-serif-thin"/>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

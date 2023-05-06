@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".turista_login_portal">
+
+    <RelativeLayout
+        android:id="@+id/relativeLyt_turista_login"
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+        <VideoView
+            android:id="@+id/videoVw_turista_login"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"/>
+
+        <ImageView
+            android:id="@+id/image_turista_logo"
+            android:layout_width="351dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="43dp"
+            android:contentDescription="@string/logo_turista"
+            android:src="@drawable/logo_turista"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textVw_turista_login"
+            android:layout_width="352dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="27dp"
+            android:layout_alignParentTop="true"
+            android:background="#E21818"
+            android:layout_marginTop="353dp"
+            android:text="@string/turista_login_portal"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedVw_turista_login"
+            android:layout_width="352dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="435dp">
+
+            <GridLayout
+                android:id="@+id/gridLyt_turista_login"
+                android:layout_width="352dp"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="1">
+
+                <EditText
+                    android:id="@+id/edit_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:autofillHints="username"
+                    android:background="@color/white"
+                    android:hint="@string/turista_username"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/black"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:autofillHints="password"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="@string/turista_password"
+                    android:inputType="textVisiblePassword"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/black"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </GridLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <GridLayout
+            android:id="@+id/gridLyt_button_login"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="610dp"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="20sp"
+                android:backgroundTint="#FFDEB4"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/turista_cancel"/>
+
+            <Button
+                android:id="@+id/btn_new_register"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:backgroundTint="#159895"
+                android:text="@string/turista_new_register"/>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#FFBF9B"
+                android:text="@string/turista_submit"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+        </GridLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

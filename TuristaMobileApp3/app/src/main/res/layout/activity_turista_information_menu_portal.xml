@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".turista_information_menu_portal">
+
+    <VideoView
+        android:id="@+id/videoVw_tourism_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/img_btn_menu"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="29dp"
+        android:contentDescription="@string/home"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/home_button"/>
+
+    <ImageView
+        android:id="@+id/image_turista_logo"
+        android:layout_width="351dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="89dp"
+        android:contentDescription="@string/logo_turista"
+        android:src="@drawable/logo_turista"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textVw_turista_info_portal"
+        android:layout_width="352dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="399dp"
+        android:padding="10dp"
+        android:background="#F8CBA6"
+        android:text="@string/tourism_information_portal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedVw_turista_info_portal"
+        android:layout_width="352dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="491dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardVw_turista_info_portal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="#F4B183">
+
+            <GridLayout
+                android:id="@+id/gridLyt_turista_info_portal"
+                android:layout_width="352dp"
+                android:layout_height="999dp"
+                android:columnCount="1"
+                android:rowCount="1">
+
+                <Button
+                    android:id="@+id/hotel"
+                    android:layout_width="333dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#F97B22"
+                    android:text="@string/hotels"
+                    android:textColor="#5D4037"
+                    android:textSize="30sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/resorts"
+                    android:layout_width="333dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#9CA777"
+                    android:text="@string/beach_resorts"
+                    android:textColor="#004D40"
+                    android:textSize="30sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/resto"
+                    android:layout_width="333dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#088395"
+                    android:text="@string/restaurants"
+                    android:textColor="#FFCC80"
+                    android:textSize="30sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/schools"
+                    android:layout_width="333dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#CE5959"
+                    android:text="@string/schools"
+                    android:textColor="#FFE0B2"
+                    android:textSize="30sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/hospital"
+                    android:layout_width="333dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#B46060"
+                    android:text="@string/hospitals"
+                    android:textColor="#FFD180"
+                    android:textSize="30sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/mall"
+                    android:layout_width="333dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#E21818"
+                    android:text="@string/malls"
+                    android:textColor="#FFCC80"
+                    android:textSize="30sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/church"
+                    android:layout_width="333dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#E9A178"
+                    android:text="@string/church"
+                    android:textColor="#FFE0B2"
+                    android:textSize="30sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/banks"
+                    android:layout_width="333dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#898121"
+                    android:text="@string/banks"
+                    android:textColor="#FFE0B2"
+                    android:textSize="30sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/port"
+                    android:layout_width="333dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#F9DBBB"
+                    android:text="@string/transportations"
+                    android:textColor="#D84315"
+                    android:textSize="25sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/tourist_spot"
+                    android:layout_width="333dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#EB455F"
+                    android:text="@string/tourists_spots"
+                    android:textColor="#263238"
+                    android:textColorHint="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/tourism_hub"
+                    android:layout_width="333dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#698269"
+                    android:text="@string/tourism_office_hubs"
+                    android:textColor="#FFE0B2"
+                    android:textSize="20sp"
+                    tools:ignore="TextContrastCheck" />
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#B46060">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVw_hospital"
+        android:layout_width="390dp"
+        android:layout_height="660dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:cardElevation="40dp"
+        app:cardBackgroundColor="#B46060">
+
+        <ImageView
+            android:id="@+id/img_photo_hospital"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/hospitals"
+            android:src="@mipmap/ic_launcher"/>
+
+        <GridLayout
+            android:id="@+id/grid_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:columnCount="1"
+            android:rowCount="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="@string/hospital_name"
+                android:textSize="30sp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/hospital_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hospital_address"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/hospital_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hospital_contact_number"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/hospital_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hospital_page_link"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/hospital_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/navigation_map"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/img_navigation_map"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:contentDescription="@string/hospitals"
+                android:padding="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:text="@string/navigation_map"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </GridLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

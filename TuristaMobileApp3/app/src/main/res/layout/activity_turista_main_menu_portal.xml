@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".turista_main_menu_portal">
+
+    <RelativeLayout
+        android:id="@+id/relativeLyt_turista_menu"
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+        <VideoView
+            android:id="@+id/video_turista_main_menu"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"/>
+
+        <ImageView
+            android:id="@+id/image_turista_logo"
+            android:layout_width="351dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="56dp"
+            android:layout_marginStart="28dp"
+            android:src="@drawable/logo_turista"
+            android:contentDescription="@string/logo_turista"
+            tools:ignore="ImageContrastCheck" />
+
+        <GridLayout
+            android:id="@+id/gridLyt_welcome"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:rowCount="1"
+            android:columnCount="1"
+            android:layout_marginTop="373dp">
+
+            <TextView
+                android:id="@+id/textVw_welcome_name"
+                android:layout_width="352dp"
+                android:layout_height="50dp"
+                android:background="#87CBB9"
+                android:padding="10dp"
+                android:letterSpacing="0.3"
+                android:text="@string/dayon_kamo"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/gridLyt_turista_name"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="433dp"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="1">
+
+            <TextView
+                android:id="@+id/textVw_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFE5CA"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:letterSpacing="0.6"
+                android:text="@string/firstname"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"/>
+        </GridLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedVw_turista_menu"
+            android:layout_width="351dp"
+            android:layout_height="280dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="498dp">
+
+            <GridLayout
+                android:id="@+id/gridLyt_turista_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="1"
+                android:columnCount="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_menu_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="@string/history_portal"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#FF6D60"
+                    android:textColorHint="@color/black"
+                    android:textSize="29sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/btn_menu_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:backgroundTint="#F7D060"
+                    android:text="@string/fun_facts_portal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/btn_menu_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:backgroundTint="#569DAA"
+                    android:text="@string/gallery_portal"
+                    android:textColor="@color/black"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_menu_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:backgroundTint="#A4BC92"
+                    android:text="@string/tourism_information_portal"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_menu_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:backgroundTint="#DF7857"
+                    android:text="@string/turista_logout"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </GridLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

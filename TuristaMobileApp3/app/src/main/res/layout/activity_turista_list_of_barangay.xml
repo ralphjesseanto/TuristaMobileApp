@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7E9B0"
+    tools:context=".turista_list_of_barangay">
+
+    <RelativeLayout
+        android:id="@+id/relativeLyt_history_portal"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp">
+
+    <ImageButton
+        android:id="@+id/img_btn_menu"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/menu"
+        android:background="@android:color/transparent"
+        android:src="@drawable/home_button"/>
+
+    <ImageView
+        android:id="@+id/image_turista_logo"
+        android:layout_width="351dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="89dp"
+        android:contentDescription="@string/logo_turista"
+        android:src="@drawable/logo_turista"
+        tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textVw_list_barangay"
+            android:layout_width="352dp"
+            android:layout_height="59dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="400dp"
+            android:background="@color/teal_700"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="@string/list_of_barangay"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ExpandableListView
+            android:id="@+id/expanded_list_barangay"
+            android:layout_width="351dp"
+            android:layout_height="480dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="468dp" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

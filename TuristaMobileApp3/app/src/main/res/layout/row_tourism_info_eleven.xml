@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#698269">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVw_tourism_office"
+        android:layout_width="390dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:cardElevation="70dp"
+        app:cardBackgroundColor="#698269">
+
+        <TextView
+            android:id="@+id/tourism_hub_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textAlignment="center"
+            android:text="@string/tourism_office_name"
+            android:textSize="30sp"
+            android:padding="10dp"/>
+
+        <GridLayout
+            android:id="@+id/grid_hub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="1"
+            android:layout_marginTop="60dp">
+
+            <TextView
+                android:id="@+id/tourism_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tourism_office_address"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tourism_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tourism_office_contact_number"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tourism_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tourism_office_page_link"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </GridLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

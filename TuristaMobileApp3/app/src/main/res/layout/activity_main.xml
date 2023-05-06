@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:constraintSet="@android:color/transparent"
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/video_welcome_portal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/image_turista_logo"
+        android:layout_width="351dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="342dp"
+        android:src="@drawable/logo_turista"
+        android:contentDescription="@string/logo_turista"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/button_welcome"
+        android:layout_width="352dp"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="558dp"
+        android:backgroundTint="#F97B22"
+        android:fontFamily="serif"
+        android:text="@string/welcome_button"
+        android:textAlignment="center"
+        android:textColor="#5E35B1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tourism_info_ten">
+
+    <RelativeLayout
+        android:id="@+id/relativeLyt_tourist_spots"
+        android:layout_width="match_parent"
+        android:layout_height="988dp">
+
+        <VideoView
+            android:id="@+id/video_tourist_spot"
+            android:layout_width="match_parent"
+            android:layout_height="988dp"/>
+
+        <ImageButton
+            android:id="@+id/img_btn_menu"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/home"
+            android:src="@drawable/home_button"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/image_turista_logo"
+            android:layout_width="351dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="89dp"
+            android:contentDescription="@string/logo_turista"
+            android:src="@drawable/logo_turista"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textVw_tourist_spot"
+            android:layout_width="352dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="399dp"
+            android:background="#EB455F"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="@string/tourists_spots"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/category_tourist_spots" />
+
+        <GridLayout
+            android:id="@+id/gridLyt_tourist_spot"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="510dp"
+            android:rowCount="1"
+            android:columnCount="1">
+
+            <ImageSwitcher
+                android:id="@+id/imgSw_tourist_spot"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"/>
+
+            <Button
+                android:id="@+id/btn_prev_spot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F8CBA6"
+                android:text="@string/previous"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btn_next_spot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F8CBA6"
+                android:text="@string/next"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+        </GridLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

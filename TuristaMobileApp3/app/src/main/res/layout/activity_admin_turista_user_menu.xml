@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_turista_user_menu">
+
+    <VideoView
+        android:id="@+id/video_admin_turista_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/image_turista_logo"
+        android:layout_width="351dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="342dp"
+        android:src="@drawable/logo_turista"
+        android:contentDescription="@string/logo_turista"
+        tools:ignore="ImageContrastCheck" />
+
+    <GridLayout
+        android:id="@+id/grid_admin_menu"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="397dp"
+        android:columnCount="1"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/button_admin_user"
+            android:layout_width="352dp"
+            android:layout_height="130dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:text="@string/admin_user"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_turista_user"
+            android:layout_width="352dp"
+            android:layout_height="130dp"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:text="@string/turista_user"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </GridLayout>
+</RelativeLayout>

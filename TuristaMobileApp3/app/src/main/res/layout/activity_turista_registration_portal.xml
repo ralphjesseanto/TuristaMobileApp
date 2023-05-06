@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".turista_registration_portal">
+
+    <RelativeLayout
+        android:id="@+id/relativeLyt_register_form"
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+        <VideoView
+            android:id="@+id/videoVw_turista_login"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"/>
+
+        <ImageView
+            android:id="@+id/image_turista_logo"
+            android:layout_width="351dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="31dp"
+            android:contentDescription="@string/logo_turista"
+            android:src="@drawable/logo_turista"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textVw_registration_portal"
+            android:layout_width="352dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="339dp"
+            android:padding="20dp"
+            android:background="#617143"
+            android:text="@string/turista_registration_portal"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedVw_registration_portal"
+            android:layout_width="352dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="420dp"
+            android:background="#B46060">
+
+            <GridLayout
+                android:id="@+id/gridLyt_registration_portal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="1">
+
+                <EditText
+                    android:id="@+id/edit_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:autofillHints="name"
+                    android:hint="@string/firstname"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColorHint="@color/black"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/edit_lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="name"
+                    android:hint="@string/lastname"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColorHint="#000000"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/edit_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="postalAddress"
+                    android:hint="@string/address"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:textColorHint="#000000"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/edit_place_of_origin"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="postalAddress"
+                    android:hint="@string/place_of_origin"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:textColorHint="#000000"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/edit_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="age"
+                    android:hint="@string/age"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColorHint="#000000"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/edit_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="name"
+                    android:hint="@string/gender"
+                    android:inputType="none"
+                    android:padding="10dp"
+                    android:textColorHint="#000000"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/edit_turista_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="@string/turista_username"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/black"
+                    android:autofillHints="username"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/edit_turista_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="@string/turista_password"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/black"
+                    android:autofillHints="password"
+                    android:inputType="textVisiblePassword" />
+
+                <EditText
+                    android:id="@+id/edit_turista_cpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="@string/confirm_password"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/black"
+                    android:autofillHints="password"
+                    android:inputType="textVisiblePassword" />
+            </GridLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedVw_registration_button"
+            android:layout_width="352dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="673dp">
+
+            <GridLayout
+                android:id="@+id/gridLyt_registration_button"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:columnCount="1"
+                android:rowCount="1">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#F4B183"
+                    android:text="@string/turista_cancel"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#F4B183"
+                    android:text="@string/turista_submit"
+                    android:textColor="#616161"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+            </GridLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

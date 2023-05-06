@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".turista_gallery_menu_portal">
+
+    <VideoView
+        android:id="@+id/video_admin_turista_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/image_turista_logo"
+        android:layout_width="351dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="342dp"
+        android:src="@drawable/logo_turista"
+        android:contentDescription="@string/logo_turista"
+        tools:ignore="ImageContrastCheck" />
+
+    <GridLayout
+        android:id="@+id/grid_admin_menu"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="397dp"
+        android:columnCount="1"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/button_photo_gallery"
+            android:layout_width="352dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="serif"
+            android:text="@string/photo_gallery"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_video_gallery"
+            android:layout_width="352dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="serif"
+            android:layout_marginTop="5dp"
+            android:text="@string/video_gallery"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_main_menu"
+            android:layout_width="352dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="serif"
+            android:layout_marginTop="10dp"
+            android:text="@string/turista_menu"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </GridLayout>
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".turista_history_menu_portal">
+
+    <RelativeLayout
+        android:id="@+id/relativeLyt_turista_menu"
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+    <VideoView
+        android:id="@+id/video_turista_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"/>
+
+        <ImageView
+            android:id="@+id/image_turista_logo"
+            android:layout_width="351dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="56dp"
+            android:layout_marginStart="28dp"
+            android:src="@drawable/logo_turista"
+            android:contentDescription="@string/logo_turista"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textVw_welcome_name"
+            android:layout_width="352dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="366dp"
+            android:background="#87CBB9"
+            android:padding="10dp"
+            android:text="@string/history_menu_portal"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:id="@+id/gridLyt_turista_menu"
+            android:layout_width="351dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="422dp"
+            android:columnCount="1"
+            android:orientation="horizontal"
+            android:rowCount="1">
+
+            <Button
+                android:id="@+id/history_one"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/dumaguete_city"
+                android:textColor="@color/black"
+                android:backgroundTint="#FF6D60"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/history_two"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/municipality_of_sibulan"
+                android:textColor="@color/black"
+                android:backgroundTint="#FFA559"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/history_three"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/municipality_of_bacong"
+                android:textColor="@color/black"
+                android:backgroundTint="#159895"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/history_four"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/municipality_of_valencia"
+                android:textColor="@color/black"
+                android:backgroundTint="#F4B183"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/barangay"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/list_of_barangay"
+                android:textColor="@color/black"
+                android:backgroundTint="#B46060"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/menu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#E4C988"
+                android:text="@string/turista_menu"
+                android:textColor="#00796B"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+        </GridLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
